@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(167, 167, 164);
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.facebooklogo {
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(48, 130, 207);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.facebooktext {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right {
+    margin-top: 15%;
+    margin-right: 25%;
+    margin-left: 17%;
+}
+
+.logintable {
+    border: 2px solid rgb(175, 172, 172);
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: snow;
+}
+
+.email,
+.password {
+    margin-top: 20px;
+    padding: 3px;
+    width: 75%;
+}
+
+.login {
+    margin-top: 20px;
+    padding: 3px;
+    width: 78%;
+    color: white;
+    background-color: rgb(18, 158, 214);
+    border-color: rgb(18, 158, 214);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: rgb(25, 60, 214);
+}
+
+.forgotpassword {
+    margin-top: 20px;
+    padding: 3px;
+}
+
+.createnewaccount {
+    margin-top: 20px;
+    padding: 3px;
+    height: 5vh;
+    width: 78%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 15px;
+    border-radius: 7px;
+    background-color: green;
+}
+
+.createnewaccount:hover {
+    background-color: rgb(64, 228, 64);
+    border-color: rgb(64, 228, 64);
+}
+
+.promotion {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table {
+    width: 400px;
+    height: 340px;
+    border: 0px solid blue;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 5%;
+    box-shadow: 3px 1px 50px #d9d9d9;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.line {
+    margin: 20px;
+    width: 310px;
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 40%;
+}
+
+.tab {
+    width: 40%;
+    height: 80%;
+    background-color: #fff;
+    position: fixed;
+    margin-left: 30%;
+    margin-top: 3%;
+    padding: 1%;
+    box-shadow: 3px 1px 50px #d9d9d9;
+}
+
+.disclamer {
+    font-size: 10px;
+    padding: 5%;
+    margin-top: 3%;
+    margin-right: 2%;
+    padding-left: 2%
+}
+
+.First,
+.last {
+    padding: 12px;
+    width: 220px;
+    margin: 6px;
+    border: 2px solid #919191;
+    border-radius: 5px;
+}
+
+.newemail,
+.newpass {
+    padding: 12px;
+    width: 480px;
+    margin: 6px;
+    border: 2px solid #919191;
+    border-radius: 5px;
+}
+
+.month,
+.date,
+.year {
+    padding: 12px;
+    width: 150px;
+    margin: 6px;
+    border: 2px solid #919191;
+    border-radius: 5px;
+}
+
+.g1,
+.g2,
+.g3 {
+    padding: 12px;
+    width: 120px;
+    margin: 6px;
+    border: 2px solid #919191;
+    border-radius: 5px;
+    float: left
+}
+
+.wholesignup {
+    position: absolute;
+    margin-top: -24%;
+    margin-left: 45%;
+    background-color: grey;
+    border-radius: 8px;
+    opacity: 90%;
+}
+
+.button {
+    width: 150px;
+    padding: 10px;
+    margin: 8px;
+    margin-left: 90px;
+    color: rgb(28, 160, 56);
+    border-radius: 5px;
+    text-align: center;
+}
