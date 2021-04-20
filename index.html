@@ -7,6 +7,16 @@
 </head>
 
 <body>
+
+    <script>
+        function createnewaccount() {
+            document.getElementById("demo").style.display = "block";
+        }
+
+        function signin() {
+            document.getElementById("demo").style.display = "none";
+        }
+    </script>
     <div class="main">
         <div class="left">
             <div class="facebooklogo">
@@ -24,10 +34,10 @@
                     <input type="password" placeholder="Password" class="password"><br>
                     <input type="button" value="Log In" class="login"><br>
                     <div class="forgotpassword">
-                        <a href="https://facebook.com"> Forgot password  </a><br>
+                        <a href="https://facebook.com"> Forgot password </a><br>
                     </div>
                     <hr>
-                    <input type="button" value="Create New Account" class="createnewaccount"><br>
+                    <input type="button" value="Create New Account" class="createnewaccount" onclick="createnewaccount()"><br>
                 </form>
             </div>
 
@@ -40,9 +50,12 @@
     </div>
 
 
-    <div class="wholesignup">
+    <div class="wholesignup" id="demo">
         <form>
-            <p><b>Sign Up</b></p>
+            <div class="katta">
+                <b>Sign Up</b>
+                <div class="signin"><input type="button" value="x" onclick="signin()"></div>
+            </div>
             <p>It's quick and easy.</p>
             <hr class="line2">
             <input type="text" name="" placeholder="First name" class="First">
@@ -50,32 +63,32 @@
             <input type="text" name="" placeholder="Email or phone number" class="newemail"><br>
             <input type="password" name="" placeholder="New password" class="newpass"><br>
             <select class="month">
-              <option>january</option>
-              <option>Feb</option> 
-             <option>march</option>
-             <option>April</option>
-             <option>may</option>
-             <option>june</option>
-             <option>july</option>
-             <option>August</option>
-             </select>
+                <option>january</option>
+                <option>Feb</option>
+                <option>march</option>
+                <option>April</option>
+                <option>may</option>
+                <option>june</option>
+                <option>july</option>
+                <option>August</option>
+            </select>
 
 
             <select class="date">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-               <option>4</option>
-               <option>5</option>
-               <option>6</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
             </select>
             <select class="year">
-                 <option>2000</option>
-                 <option>2002</option>
-                  <option>2003</option>
-                  <option>2004</option>
-                 <option>2005</option>
-                 <option>2006</option>
+                <option>2000</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
             </select>
             <br>
             <div class="g1">
@@ -93,7 +106,8 @@
             </div><br>
             <p class="disclamer">By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time. </p>
         </form>
-        <div class="button"> <input type="button" value="SignUp" class="button"><br>
+        <div class="button">
+            <input type="button" value="SignUp" class="button1"><br>
         </div>
     </div>
 </body>

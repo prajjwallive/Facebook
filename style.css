@@ -190,7 +190,7 @@ body {
     opacity: 90%;
 }
 
-.button {
+.button1 {
     width: 150px;
     padding: 10px;
     margin: 8px;
@@ -198,4 +198,20 @@ body {
     color: rgb(28, 160, 56);
     border-radius: 5px;
     text-align: center;
+}
+
+.button1 {
+    background-color: red;
+}
+
+.signin {
+    margin-left: 83%;
+}
+
+.katta {
+    display: flex;
+}
+
+#demo {
+    display: none;
 }
