@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="insidelogin.css">
+    <!-- script for search clickevent -->
+    <script>
+        function search() {
+            document.getElementById("demo").style.display = "block";
+            alert(hi)
+        }
+
+        function leftarrow() {
+            document.getElementById("demo").style.display = "none";
+        }
+    </script>
+    <!-- script for search click event ends here -->
+    <!-- script for the toggle part starts here -->
+    <script>
+        function toggle() {
+            var x = document.getElementById("profilebar")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- From here the header file of the html stars -->
+    <header class="header">
+        <div class="subheader">
+            <div class="facebooklogo">
+                <img src="Facebook-logo.png" height="60px" width="80px" id="facebooklogo"></div>
+            <div class="searchinput"><input type="text" placeholder="Search Facebook" id="placeholderone" onclick="search()"></div>
+            <div class="headerlist">
+                <ul id="headerlist">
+                    <li><img src="homeicon.png" height="40px" width="40px" id="homebutton" class="space1"></li>
+                    <li><img src="pages.png" height="40px" width="40px" id="pages" class="space1"></li>
+                    <li><img src="watch.png" height="40px" width="40px" id="watch" class="space1"></li>
+                    <li><img src="marketplace.png" height="40px" width="40px" id="marketplace" class="space1"></li>
+                    <li><img src="group.png" height="40px" width="40px" id="group" class="space1"></li>
+                </ul>
+            </div>
+
+
+            <div class="headerlist2">
+                <ul id="headerlist2">
+                    <li>
+                        <div class="name">
+                            <img src="profile.jpg" height="40px" width="40px" id="profilepic">
+                            <div class="profilename">Prajjwal</div>
+                        </div>
+                    </li>
+                    <li><img src="write.png" height="40px" width="40px" id="write" class="space2"></li>
+                    <li><img src="messenger.png" height="40px" width="40px" id="messenger" class="messenger"></li>
+                    <li><img src="notification.png" height="40px" width="40px" id="notification" class="space2"></li>
+                    <li><button type="button" class="downarrowbutton"><img src="downarrow.png" height="40px" width="30px" id="downarrow" class="space2" onclick="toggle()"></button></li>
+                </ul>
+            </div>
+            <!-- This ends the HTML and CSS section -->
+        </div>
+
+        <!-- coding for the javascript clickevent in the header file -->
+        <div class="searchheadertwo" id="demo">
+            <section class="biggersearch">
+                <button class="leftarrowbutton"> <img src="leftarrow.png" height="40px" width="40px" class="leftarrow" onclick="leftarrow()"></button>
+                <input type="text" placeholder="Search Facebook" class="search_section_click_event"><br>
+            </section>
+            <div class="no_recent_searches">No Recent searches</div>
+        </div>
+        <!-- coding for the javascript clickevent in the headerfile ends here -->
+
+        <!-- coding for the downarrow starts here -->
+        <section class="downarrow" id="profilebar">
+            <div class="profilesection">
+                <img src="profile.jpg" class="profilepic" height="60px" width="60px">
+                <div class="profile_sub_section">
+                    <div class="profile_name_downarrow">Prajjwal Live</div>
+                    <br>
+                    <div class="see_your_profile">See your profile</div>
+                </div>
+            </div>
+            <hr>
+            <div class="feedbacksection">
+                <img src="feedback.png" class="feedback" height="60px" width="60px">
+                <div class="feedback_sub_section">
+                    <div class="feedback_downarrow">Give Feedback</div>
+                    <br>
+                    <div class="see_your_profile">Help us improve the new facebook</div>
+                </div>
+            </div>
+            <hr>
+            <div class="settingsection">
+                <img src='setting.png' class="setting" height="60px" width="60px">
+                <div class="privacy">Settings & Privacy</div>
+            </div>
+            <div class="helpsection">
+                <img src='help.png' class="helpandsupport" height="60px" width="60px">
+                <div class="help">Help and Support</div>
+            </div>
+            <div class="displaysection">
+                <img src='display.png' class="displayandaccessibility" height="60px" width="60px">
+                <div class="display">Display and Acessibility</div>
+            </div>
+            <div class="logoutsection">
+                <a href="index.html"><button class="logoutbutton"><img src='logout.png' class="Log_out" height="60px" width="60px"></button>
+                    </a>
+                <div class="logout">Logout</div>
+            </div>
+        </section>
+    </header>
+    <hr class="hr1">
+    <!-- header part ends from here -->
+
+    <footer class="footer">
+        <!-- left part starts from here  -->
+        <section class="leftsection">
+            <ul class="left_section_list">
+                <li>
+                    <div class="leftprofile"><img src="profile.jpg" height="40px" width="40px" id="leftprofile">
+                        <div class="left_list">Prajjwal Live</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="covid"><img src="covid.png" height="40px" width="40px">
+                        <div class="left_list">Covid 19 Information Center</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dost"><img src="firends.png" height="40px" width="40px">
+                        <div class="left_list">friends</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mostrecent"><img src="mostrecent.png" height="40px" width="40px">
+                        <div class="left_list">Most Recent</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="groups"><img src="groups.png" height="40px" width="40px">
+                        <div class="left_list">Groups</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="marketplace"><img src="marketplace.png" height="40px" width="40px">
+                        <div class="left_list">Market Place</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ads"><img src="lul.png" height="40px" width="40px">
+                        <div class="left_list">Ads Center</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="adsmanager"><img src="star.png" height="40px" width="40px">
+                        <div class="left_list">Adsmanager</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="businessmanager"><img src="business.png" height="40px" width="40px">
+                        <div class="left_list">Business Manager</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="campus"><img src="campus.png" height="40px" width="40px">
+                        <div class="left_list">Campus</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="community"><img src="community.png" height="40px" width="40px">
+                        <div class="left_list">Community Heath</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="events"><img src="event.png" height="40px" width="40px">
+                        <div class="left_list">Events</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fbpay"><img src="facebookpay.png" height="40px" width="40px">
+                        <div class="left_list">Facebook Pay</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friendlist"><img src="firendlist.png" height="40px" width="40px">
+                        <div class="left_list">Friend list</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fundraiser"><img src="fundaraiser.png" height="40px" width="40px">
+                        <div class="left_list">Fund Raiser</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="games"><img src="games.png" height="40px" width="40px">
+                        <div class="left_list">Games</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gaming"><img src="gaming.png" height="40px" width="40px">
+                        <div class="left_list">Gaming video</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="jobs"><img src="jobs.png" height="40px" width="40px">
+                        <div class="left_list">Jobs</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="livevideos"><img src="live.png" height="40px" width="40px">
+                        <div class="left_list">Live Videos</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="memories"><img src="memories.png" height="40px" width="40px">
+                        <div class="left_list">Memories</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="messengers"><img src="messenger.png" height="40px" width="40px">
+                        <div class="left_list">Messenger</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mostrecent"><img src="mostrecent.png" height="40px" width="40px">
+                        <div class="left_list">Most Recent</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pages"><img src="pages.png" height="40px" width="40px">
+                        <div class="left_list">Pages</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="marketplace"><img src="marketplace.png" height="40px" width="40px">
+                        <div class="left_list">Market Place</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="favourites"><img src="favourites.png" height="40px" width="40px">
+                        <div class="left_list">Favourites</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="watch12"><img src="watch.png" height="40px" width="40px">
+                        <div class="left_list">Watch</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="weather"><img src="weather.png" height="40px" width="40px">
+                        <div class="left_list">Weather</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="live"><img src="live.png" height="40px" width="40px">
+                        <div class="left_list">Live</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="groups"><img src="groups.png" height="40px" width="40px">
+                        <div class="left_list">Group</div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </section>
+        <!-- left section ends from here -->
+        <!-- Story section ends from here -->
+        <section class="story">
+            <ul class="storylist">
+                <div class="owner">
+                    <li><img src="profile.jpg" height="95px" width="140px" class="images"></li>
+                    <img src="create.png" height="25px" width="25px" class="create">
+                    <div class="createstory">Create <br>
+                        <div class="storyword">Story</div>
+                    </div>
+                </div>
+                <li><img src="soviet.jpg" height="190px" width="140px" class="images" title="Soviet"></li>
+                <li><img src="raj.jpg" height="190px" width="140px" class="images" title="Raj"></li>
+                <li><img src="saurav.jpg" height="190px" width="140px" class="images" title="Saurav"></li>
+                <li><img src="sagar.jpg" height="190px" width="140px" class="images" title="Sagar"></li>
+            </ul>
+        </section>
+        <section class="storyprofile">
+            <ul class="profiles_for_story">
+                </div>
+                <li><img src="soviet.jpg" height="40px" width="40px" class="profileimages"></li>
+                <li><img src="raj.jpg" height="40px" width="40px" class="profileimages"></li>
+                <li><img src="saurav.jpg" height="40px" width="40px" class="profileimages"></li>
+                <li><img src="sagar.jpg" height="40px" width="40px" class="profileimages"></li>
+            </ul>
+
+        </section>
+        <!-- story part ends from here -->
+        <div class="break"></div>
+        <!-- search part starts from here -->
+        <section class="post">
+            <div class="writepost">
+                <div class="postimage"><img src="profile.jpg" id="anonymous" height="45px" width="45px"> </div>
+                <input type="text" placeholder=" What's on your mind,Prajjwal Live?" class="posttext">
+            </div>
+            <hr>
+            <ul class="buttonlist">
+                <li><button type="button" class="livevideobutton"><img src="livevideo (1).png" id="live_video" height="30px" width="30px"><div class="editing_search_text">Live Video</div></button></li>
+                <li><button type="button" class="livevideobutton"><img src="photos.png" id="photos" height="30px" width="30px"><div class="editing_search_text">Photos/videos</div></button></li>
+                <li><button type="button" class="livevideobutton"><img src="feeling.png" id="feeling" height="30px" width="30px"><div class="editing_search_text">Feelings/Activites</div></button></li>
+            </ul>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>

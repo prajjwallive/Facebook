@@ -1,0 +1,574 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+
+/* Header file Starts from here */
+
+.header {
+    background-color: rgb(245, 239, 239);
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+
+
+/* first phase of the header file starts from here */
+
+.subheader {
+    display: flex;
+}
+
+.facebooklogo {
+    margin-top: 8px;
+    padding: 0;
+}
+
+#facebooklogo {
+    border-radius: 50%;
+}
+
+.searchinput {
+    margin-top: 18px;
+    justify-content: right;
+}
+
+#placeholderone {
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#placeholderone::placeholder {
+    text-align: center;
+    background-image: url(searchicon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding: 4%;
+    background-color: rgb(243, 241, 237);
+}
+
+.headerlist {
+    margin-left: 490px;
+}
+
+#headerlist {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 200px;
+}
+
+.space1 {
+    margin-left: 80px;
+}
+
+.hr1 {
+    margin: 0;
+    padding: 0;
+}
+
+.headerlist2 {
+    margin-left: 500px;
+}
+
+#headerlist2 {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 200px;
+}
+
+.space2 {
+    margin-left: 20px;
+}
+
+.name {
+    margin-left: 40px;
+    display: flex;
+}
+
+.name:hover {
+    border: 1px solid rgba(188, 189, 194, 255);
+    border-radius: 15px;
+    background-color: rgba(188, 189, 194, 255);
+}
+
+.profilename {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 1, 1);
+    padding: 0;
+    margin-top: 10%;
+    margin-left: 10px;
+}
+
+#profilepic {
+    border-radius: 50%;
+}
+
+#homebutton,
+#pages,
+#watch,
+#marketplace,
+#group {
+    height: 50px;
+    width: 50;
+    border-radius: 20%;
+    border: 1px solid rgb(155, 151, 151);
+    cursor: pointer;
+}
+
+#homebutton:hover,
+#pages:hover,
+#watch:hover,
+#marketplace:hover,
+#group:hover #write:hover,
+#messenger:hover,
+#notification:hover,
+#downarrow:hover,
+#write:hover,
+#group:hover {
+    border: 1px solid rgba(188, 189, 194, 255);
+    border-radius: 15px;
+    background-color: rgba(188, 189, 194, 255);
+    cursor: pointer;
+}
+
+#homebutton,
+#pages,
+#watch,
+#marketplace,
+#group #write,
+#messenger,
+#notification,
+#downarrow,
+#write,
+#group {
+    border: 2px solid rgb(194, 191, 191);
+    border-radius: 50%;
+}
+
+.messenger {
+    margin-left: 20px;
+    height: 20px;
+    width: 25px;
+    margin-top: 10px;
+}
+
+#messenger:hover {
+    border: px solid rgba(188, 189, 194, 255);
+    border-radius: 50px;
+    background-color: rgba(188, 189, 194, 255);
+}
+
+
+/* first phase of the header file end here */
+
+
+/* coding for the js  for search click event starts form here */
+
+.searchheadertwo {
+    background-color: rgb(247, 236, 236);
+    padding: 8px;
+    height: 100px;
+    width: 350px;
+    border: 2px solid rgb(248, 245, 245);
+    border-radius: 12px;
+    position: absolute;
+    top: 5px;
+}
+
+.biggersearch {
+    border-radius: 15px;
+    display: flex;
+}
+
+.search_section_click_event {
+    width: 300px;
+    height: 30px;
+    border-radius: 18px;
+}
+
+.no_recent_searches {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.leftarrowbutton {
+    background: none;
+    border: none;
+}
+
+#demo {
+    display: none;
+}
+
+
+/* coding for the js search click event ends from here */
+
+
+/* coding for the js down arrow click event starts from here */
+
+.downarrow {
+    height: 500px;
+    width: 400px;
+    background-color: rgb(248, 239, 239);
+    border: 2px solid rgb(241, 235, 235);
+    border-radius: 12px;
+    position: absolute;
+    top: 7.57%;
+    left: 79%;
+}
+
+.profilesection,
+.feedbacksection,
+.settingsection,
+.helpsection,
+.displaysection,
+.logoutsection {
+    display: flex;
+    padding: 8px;
+}
+
+.profilesection:hover,
+.feedbacksection:hover,
+.settingsection:hover,
+.helpsection:hover,
+.displaysection:hover,
+.logoutsection:hover {
+    background-color: rgb(189, 184, 184);
+}
+
+.profilepic {
+    border-radius: 50%;
+}
+
+.profile_name_downarrow,
+.feedback_downarrow {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.see_your_profile {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -18px;
+}
+
+.privacy,
+.help,
+.display,
+.logout {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.logoutbutton,
+.downarrowbutton {
+    background: none;
+    border: none;
+}
+
+#profilebar {
+    display: none;
+}
+
+
+/* coding for the js down arrow click event ends from here */
+
+
+/* Footer part starts from here */
+
+.footer {
+    float: left;
+}
+
+
+/* left section starts from here */
+
+.leftsection {
+    height: 893px;
+    width: 400px;
+    background-color: rgb(245, 236, 236);
+    border: 2px solid rgb(233, 230, 230);
+    position: relative;
+}
+
+.left_section_list {
+    list-style-type: none;
+    height: 820px;
+    width: 350px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.leftprofile,
+.covid,
+.firends,
+.mostrecent,
+.groups,
+.marketplace,
+.ads,
+.adsmanager,
+.businessmanager,
+.campus,
+.community,
+.events,
+.fbpay,
+.events,
+.friendlist,
+.messengers,
+.pages,
+.favourite,
+.watch12,
+.weather,
+.livevideos,
+.group,
+.memories,
+.games,
+.gaming,
+.fundraiser,
+.jobs,
+.dost,
+.favourites,
+.live {
+    display: flex;
+}
+
+.leftprofile:hover,
+.covid:hover,
+.firends:hover,
+.mostrecent:hover,
+.groups:hover,
+.marketplace:hover,
+.ads:hover,
+.adsmanager:hover,
+.businessmanager:hover,
+.campus:hover,
+.community:hover,
+.events:hover,
+.fbpay:hover,
+.events:hover,
+.friendlist:hover,
+.messengers:hover,
+.pages:hover,
+.favourite:hover,
+.watch12:hover,
+.weather:hover,
+.livevideos:hover,
+.group:hover,
+.memories:hover,
+.games:hover,
+.gaming:hover,
+.fundraiser:hover,
+.jobs:hover,
+.dost:hover,
+.favourites:hover,
+.live:hover {
+    background-color: bisque;
+    transition-duration: 3s;
+    cursor: pointer;
+}
+
+#leftprofile {
+    border-radius: 50%;
+}
+
+.left_list {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+    font-style: oblique;
+    padding: 10px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(8, 8, 8);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #444343;
+}
+
+
+/* left part ends from here */
+
+
+/* story part starts from here */
+
+.story {
+    height: 200px;
+    width: 900px;
+    margin-right: 30px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+.storylist {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.images {
+    border-radius: 20px;
+    margin-right: 17px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.images:hover {
+    image-rendering: pixelated;
+    image-resolution: 200px 300px;
+}
+
+.owner {
+    height: "190px";
+    width: "140px";
+    text-align: center;
+}
+
+.create {
+    background-color: rgb(5, 149, 216);
+    border-radius: 50%;
+}
+
+.createstory,
+.storyword {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.profiles_for_story {
+    list-style-type: none;
+    display: flex;
+}
+
+.storyprofile {
+    position: absolute;
+    top: 9.7%;
+    left: 39%;
+}
+
+.profileimages {
+    margin-right: 110px;
+    border-radius: 50%;
+    border: 3px solid rgb(22, 126, 211);
+    cursor: pointer;
+}
+
+.profileimages:hover {
+    border: none;
+}
+
+
+/* story section ends from here */
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+
+/* post section starts from here */
+
+.post {
+    background-color: rgb(233, 231, 231);
+    height: 130px;
+    width: 870px;
+    border: 3px solid rgb(247, 243, 243);
+    border-radius: 12px;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+}
+
+.writepost {
+    display: flex;
+    margin-top: 8px;
+}
+
+#anonymous {
+    border-radius: 50%;
+}
+
+.posttext {
+    width: 850px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 4px;
+    border: none;
+}
+
+.buttonlist {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.livevideobutton {
+    width: 200px;
+    background: none;
+    border: none;
+}
+
+.livevideobutton:hover {
+    background-color: rgb(236, 235, 235);
+    border-radius: 15px;
+}
+
+#livevideos,
+#photos,
+#feelings {
+    text-align: center;
+}
+
+.editing_search_text {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Right section starts from here */
