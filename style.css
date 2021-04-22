@@ -194,14 +194,17 @@ body {
     width: 150px;
     padding: 10px;
     margin: 8px;
-    margin-left: 90px;
-    color: rgb(28, 160, 56);
+    margin-left: 50%;
+    background-color: rgb(28, 160, 56);
     border-radius: 5px;
     text-align: center;
+    border-color: rgb(28, 160, 56);
 }
 
-.button1 {
-    background-color: red;
+.button1:hover {
+    background-color: rgb(0, 255, 85);
+    color: white;
+    border-color: rgb(0, 255, 85);
 }
 
 .signin {

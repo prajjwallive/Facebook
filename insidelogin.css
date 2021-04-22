@@ -11,7 +11,11 @@ body {
     background-color: rgb(245, 239, 239);
     margin: 0;
     padding: 0;
-    height: 70px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    opacity: 100%;
+    box-shadow: #444343;
 }
 
 
@@ -37,10 +41,11 @@ body {
 
 #placeholderone {
     height: 35px;
-    width: 250px;
-    border-radius: 10px;
+    width: 255px;
+    border-radius: 18px;
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 #placeholderone::placeholder {
@@ -50,7 +55,7 @@ body {
     background-repeat: no-repeat;
     background-position: 10px;
     padding: 4%;
-    background-color: rgb(243, 241, 237);
+    background-color: rgb(211, 210, 207);
 }
 
 .headerlist {
@@ -118,10 +123,10 @@ body {
 #watch,
 #marketplace,
 #group {
-    height: 50px;
-    width: 50;
+    height: 40px;
+    width: 40;
     border-radius: 20%;
-    border: 1px solid rgb(155, 151, 151);
+    border: 1px solid rgb(202, 200, 200);
     cursor: pointer;
 }
 
@@ -157,9 +162,9 @@ body {
 
 .messenger {
     margin-left: 20px;
-    height: 20px;
-    width: 25px;
-    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    margin-top: 1px;
 }
 
 #messenger:hover {
@@ -188,12 +193,14 @@ body {
 .biggersearch {
     border-radius: 15px;
     display: flex;
+    border: none;
 }
 
 .search_section_click_event {
     width: 300px;
     height: 30px;
     border-radius: 18px;
+    border: none;
 }
 
 .no_recent_searches {
@@ -227,7 +234,7 @@ body {
     border: 2px solid rgb(241, 235, 235);
     border-radius: 12px;
     position: absolute;
-    top: 7.57%;
+    top: 90.88%;
     left: 79%;
 }
 
@@ -306,7 +313,8 @@ body {
     width: 400px;
     background-color: rgb(245, 236, 236);
     border: 2px solid rgb(233, 230, 230);
-    position: relative;
+    position: fixed;
+    top: 70px;
 }
 
 .left_section_list {
@@ -429,6 +437,10 @@ body {
 
 
 /* left part ends from here */
+
+.mid {
+    position: static;
+}
 
 
 /* story part starts from here */
@@ -571,4 +583,364 @@ body {
 }
 
 
+/* search section ends from here */
+
+
+/* room section */
+
+.room {
+    height: 80px;
+    width: 870px;
+    background-color: rgb(199, 196, 196);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border-radius: 12px;
+}
+
+.create_room {
+    display: flex;
+}
+
+.roombutton {
+    background-image: url(room.png);
+    height: 60px;
+    width: 180px;
+    border-radius: 60px;
+    margin-top: 13px;
+    margin-left: 7px;
+    border: none;
+}
+
+.roombutton:hover {
+    image-orientation: flip;
+    border-color: rgb(31, 94, 212);
+    cursor: pointer;
+}
+
+.roomlist {
+    list-style-type: none;
+    display: flex;
+}
+
+.roomlistpic {
+    margin-right: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.roomlistpic:hover {
+    image-rendering: pixelated;
+    image-orientation: flip;
+    cursor: pointer;
+}
+
+
+/* room section ends from here */
+
+
+/* Post section starts from here */
+
+.newsfeedlist {
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    list-style-type: none;
+}
+
+#manish {
+    border-radius: 15px;
+}
+
+.video {
+    border-radius: 15;
+}
+
+
 /* Right section starts from here */
+
+.rightsection {
+    background-color: rgb(243, 233, 233);
+    height: 970px;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: 80%;
+}
+
+.rightsection:hover {
+    background-color: rgb(241, 228, 228);
+    height: 970px;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: 80%;
+    border-radius: 30px;
+    border: 3px solid rgb(216, 215, 215);
+}
+
+.sponser {
+    border-color: rgba(228, 223, 223, 0.808);
+    height: 500px;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: 80%;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.sponser_text,
+.page_text {
+    margin-left: 10%;
+    font-size: 24px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
+}
+
+.BSIT {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.ncell {
+    margin-top: 7%;
+    margin-left: 10%;
+    display: flex;
+}
+
+#BSIT,
+#ncell {
+    border-radius: 10px;
+}
+
+.BSIT:hover,
+.ncell:hover {
+    image-rendering: pixelated;
+    transition-delay: 1ms;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #bdbcbc;
+}
+
+.bsit_template,
+.ncell_template {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 22px;
+}
+
+
+/* Advertisement section ends from here */
+
+
+/* Page section starts from here */
+
+.page_name {
+    display: flex;
+}
+
+#page_pic {
+    border-radius: 50%;
+    margin-left: 35px;
+}
+
+.name_anonymous {
+    font-size: 22px;
+    background: none;
+    font-weight: bolder;
+    margin-top: 14px;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notification_name,
+.announcement {
+    display: flex;
+    margin-left: 42px;
+    margin-top: 15px;
+    padding: 8px;
+    width: 100%;
+}
+
+
+/* Page section ends from here */
+
+
+/* Friend request section start from here */
+
+.friendrequest {
+    float: left;
+}
+
+.anuska {
+    display: flex;
+}
+
+#anuska {
+    border-radius: 50%;
+    margin-left: 35px;
+}
+
+.anuska_template {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+
+.confirm_delete {
+    margin-top: -2px;
+    margin-left: 110px;
+}
+
+.Confirm {
+    width: 100px;
+    height: 3vh;
+    background-color: rgb(36, 117, 238);
+    background-repeat: none;
+    border-color: rgb(36, 117, 238);
+    border-radius: 7px;
+    color: white;
+}
+
+.Confirm:hover {
+    width: 100px;
+    height: 3vh;
+    background-color: rgb(8, 49, 109);
+    background-repeat: none;
+    border-color: rgb(8, 49, 109);
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.Delete {
+    width: 100px;
+    height: 3vh;
+    background-repeat: none;
+    border: none;
+    border-radius: 7px;
+    color: rgb(12, 11, 11);
+}
+
+.Delete:hover {
+    width: 100px;
+    height: 3vh;
+    background-color: #9b9797;
+    border: none;
+    border-radius: 7px;
+    color: rgb(12, 11, 11);
+    cursor: pointer;
+}
+
+.mutualfriend {
+    color: #3a3939;
+    margin-top: -46px;
+    margin-left: 115px;
+}
+
+.friendrequest {
+    width: 100%;
+}
+
+.friendrequest:hover,
+.notification_name:hover,
+.announcement:hover,
+.page_name:hover {
+    background-color: #9b9797;
+}
+
+
+/* Friend request section ends from here */
+
+
+/* Contacts section starts from here */
+
+.contact_template {
+    float: left;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.videocall1 {
+    float: right;
+    margin-top: 2%;
+    margin-right: 18%;
+}
+
+.videocall2 {
+    float: right;
+    margin-top: 2%;
+    margin-right: -13%;
+}
+
+.saraj {
+    height: 50px;
+    width: 400px;
+    margin-top: 30%;
+}
+
+.saraj:hover {
+    background-color: #9b9797;
+    cursor: pointer;
+}
+
+.saraj_pic {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#saraj {
+    border-radius: 50%;
+}
+
+.saraj_name {
+    margin-top: 11px;
+    margin-left: 7px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.rohit:hover {
+    background-color: #9b9797;
+    cursor: pointer;
+}
+
+.rohit_pic {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#rohit {
+    border-radius: 50%;
+}
+
+.rohit_name {
+    margin-top: 11px;
+    margin-left: 7px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+/* contact section ends here */
+
+
+/* right section ends here */
